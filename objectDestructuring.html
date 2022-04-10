@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    /*Object Destructuring:
+     JavaScript Object Destructuring is the syntax for extracting values from an 
+     object property and assigning them to a variable.
+     The destructuring is also possible for JavaScript Arrays.
+    */
+
+   //Normal way to extract from an object property:
+
+   const obj = {
+  _name: "Priyanka",
+  city: "Pune",
+  mobileNo: 7383441173,
+  education: "Bachelors",
+  graduationCity: "Amravati",
+}
+
+// console.log(_name);
+
+const _name1 = obj._name;
+const city1 = obj.city;
+const mobileNo1 = obj.mobileNo;
+const education1 = obj.education;
+const graduationCity1 = obj.graduationCity;
+
+console.log(_name1);
+
+const obj2 = {
+  _name2: _name1,
+  city2: city1,
+  mobileNo2: mobileNo1,
+  education2: education1,
+  graduationCity2: graduationCity1,
+}
+
+//Using destructuring:
+
+const obj0 = {
+  _name: "Priyanka",
+  city: "Pune",
+  mobileNo: 7383441173,
+  education: "Bachelors",
+  graduationCity: "Amravati",
+}
+
+const { _name, city, mobileNo, education, graduationCity} = obj0;
+
+const obj3 = {
+  _name3: _name,
+  city3: city,
+  mobileNo3: mobileNo,
+  education3: education,
+  graduationCity3: graduationCity,
+}
+
+console.log(obj3);
+
+</script>
